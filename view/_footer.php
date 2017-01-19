@@ -1,35 +1,71 @@
-<div class="footer_bg" id="contact"><!-- start footer -->
-<div class="container">
-	<div class="row footer">
-		<div class="col-md-8 contact_left">
-			<h3>Restons en contact !</h3>
-			<p>Une question à me demander, une idée ou une remarque ? </h4>
-			<form method="post" action="#">
-				<input type="text" value="Nom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nom';}">
-				<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-				<input type="text" value="Sujet" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Sujet';}">
-				<textarea onfocus="if(this.value == 'Votre message ici') this.value='';" onblur="if(this.value == '') this.value='Votre message ici;" >Votre message ici</textarea>
-				<span class="pull-right"><input type="submit" value="Envoyer !"></span>
-			</form>
+<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="3u 6u(narrower) 12u$(mobilep)">
+								<h3>Liens utiles</h3>
+								<ul class="links">
+									<li><a href="c_index.php">Accueil</a></li>
+									<li><a href="c_manif_page.php?debut=0">Manifestations par page</a></li>
+									<li><a href="c_manif.php">Toutes les manifestions</a></li>
+									<li><a href="c_salle_page.php?debut=0">Salles par page</a></li>
+									<li><a href="c_salle.php">Toutes les salles</a></li>
+									
+								</ul>
+							</section>
+							<section class="3u 6u(narrower) 12u$(mobilep)">
+								<h3>Autres liens utiles</h3>
+								<ul class="links">
+									
+									<li><a href="c_manif_pdf.php">Le catalogue</a></li>
+									<li><a href="c_search.php">Rechercher</a></li>
+								</ul>
+							</section>
+							
+							<section class="6u 12u(narrower)">
+								<h3>Une question ? Contactez nous</h3>
+								<form>
+									<div class="row 50%">
+										<div class="6u 12u(mobilep)">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="6u 12u(mobilep)">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</div>
+
 		</div>
-		<div class="col-md-4  contact_right">
-			
-			<ul class="list-unstyled address">
-				<li><i class="fa fa-map-marker"></i><span>15 rue Louis Pasteur 10100 Romilly sur Seine,</span></li>
-				<li><i class="fa fa-phone"></i><span>06 72 47 06 44  |  03 25 24 39 29 </span></li>
-				<li><i class="fa fa-envelope"></i><a href="mailto:xaverinepobelle@orange.fr">xaverinepobelle@orange.fr</a></li>
-				<li><i class="fa fa-envelope"></i><a href="mailto:xaverine.pobelle@etudiant.univ-reims.fr">xaverine.pobelle@etudiant.univ-reims.fr</a></li>
-			</ul>
-		</div>		
-	</div>
-</div>
-</div>
-<div class="footer1_bg"><!-- start footer1 -->
-	<div class="container">
-		<div class="row  footer">
-			<div class="copy text-center">
-				<p class="link"><span>&#169;  Xaverine POBELLE - Axel GUILLAUME - Louis RESCHE | All rights reserved | 2016 / 2017 </span></p>
-			</div>
-		</div>	
-	</div>
-</div>

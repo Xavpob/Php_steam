@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Saint Pavut</title>
+		<title>Steam</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../view/css/main2.css" />
@@ -23,6 +23,7 @@
 					<!-- Logo -->
 						<h1><a href="c_index.php" id="logo">Steam<em></em></a></h1>
 						<ul>
+							<li><a href="c_recherche.php">Rechercher un jeu</a></li>
 							<li><a href="c_panier.php">Panier</a></li>
 							<li><a href="c_profil.php">Profil</a></li>
 							<li><a href="../logout.php">Logout</a></li>
