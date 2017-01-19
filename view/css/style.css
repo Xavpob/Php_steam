@@ -1,0 +1,31 @@
+#page {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#photo{
+	margin-top: 3%;
+
+}
+
+#photo_search{
+	margin-top: -5%;
+
+}
+.manif_detail{
+	width: 100%;
+}
+
+.manif_search{
+	width: 50%;
+	margin-bottom: 3%;
+}
+
+
+.description{
+	width: 50%;
+}
+
+.progress{
+	margin-top: 10%;
+}
