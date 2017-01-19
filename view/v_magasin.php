@@ -61,42 +61,39 @@
 
 								<article>
 									<header>
-										<h2>Nos manifestations</h2>
-										<p>Vous retrouverez ici l'ensemble des évênements que nous vous proposons.</p>
+										<h2>Nos jeux</h2>
+										<p>Vous retrouverez ici l'ensemble des jeux que nous vous proposons.</p>
 									</header>
 
 
 
 
 									<?php 
-									foreach ($manifs as $key => $une):?>
+									foreach ($magasin as $key => $une):?>
 
 									
 									<div class="manif">
-										<h4>. <?php echo "<a href=\"../controler/c_manif_detail.php?id=".$une['manif_id']."\">".$une['manif_intitule']."</a>"  ?></h4>
-										au prix de 
-										<?php echo $une['manif_prix_place']?>
-										dollars
+										<h4>. <?php echo "<a href=\"../controler/c_magasin.php?id=".$une['id']."\">".$une['name']."</a>"  ?></h4>
+										<img src="http:<?php echo $une['cover_ul']?>">
 										<br>
-										<img src="../photos/<?php echo $une['manif_photo']?>">
+										GRATUIT
 									</div>
 
 									
 									<?php endforeach ?>	
 
 									  <ul class="pagination pagination-lg">
-									    <a href="../controler/c_manif_page.php?debut=<?php echo $preview ?>">&laquo;</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 0 ?>">1</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 3 ?>">2</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 6 ?>">3</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 9 ?>">4</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 12 ?>">5</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 15 ?>">6</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 17 ?>">7</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo $next ?>">&raquo;</a>
+									    <a href="../controler/c_magasin.php?debut=<?php echo $preview ?>">&laquo;</a>
+									    <a href="../controler/c_magasin.php?debut=<?php echo 0 ?>">1</a>
+									    <a href="../controler/c_magasin.php?debut=<?php echo 6 ?>">2</a>
+									    <a href="../controler/c_magasin.php?debut=<?php echo 12 ?>">3</a>
+									    <a href="../controler/c_magasin.php?debut=<?php echo 18 ?>">4</a>
+									    <a href="../controler/c_magasin.php?debut=<?php echo 24 ?>">5</a>
+									    <a href="../controler/c_magasin.php?debut=<?php echo 30 ?>">6</a>
+									    <a href="../controler/c_magasin.php?debut=<?php echo $next ?>">&raquo;</a>
 									   </ul>
 									   <ul>
-									    <li><a href="../controler/c_manif.php">Toutes les manifestations</a></li>
+									    <!-- <li><a href="../controler/c_magasin.php">Toutes les jeux</a></li> -->
 									  </ul>
 						<hr>
 								</article>
