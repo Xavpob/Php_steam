@@ -2,7 +2,7 @@
 	<section id="login-container">
 		<div class="col-md-4 col-md-offset-4 midway-horizontal midway-vertical fadeInDown animated">
 			<div id="logbox" class="register">
-				<h1><i class="fa fa-soundcloud"></i> Register !</h1>
+				<h1><i class="fa fa-steam"></i> Register !</h1>
 				<?php if(isset($_SESSION['message']) && !empty($_SESSION['message'])){ ?>
 				<div class="alert alert-danger alert-dismissable">
 					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
