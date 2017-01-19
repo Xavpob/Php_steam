@@ -69,7 +69,7 @@
 
 
 									<?php 
-									foreach ($magasin as $key => $une):?>
+									foreach ($magasin_all as $key => $une):?>
 
 									
 									<div class="manif">
