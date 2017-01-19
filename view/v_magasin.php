@@ -46,9 +46,63 @@
 			<!-- Banner -->
 				<section id="banner">
 					<header>
-						<h2>Bienvenue sur notre site : <em>Vous trouverez ici tous les jeux que vous cherchez.</em></h2>
-						<a href="c_manif_page.php?debut=0" class="button">Magasin</a>
+						<h2>Ne jouez pas seul : <em>vos amis et futurs rencontres sont sur Steam.</em></h2>
+						<a href="c_manif_page.php?debut=0" class="button">Retrouvez les</a>
 					</header>
+				</section>
+
+				<!-- CONTENU -->
+
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>Nos manifestations</h2>
+										<p>Vous retrouverez ici l'ensemble des évênements que nous vous proposons.</p>
+									</header>
+
+
+
+
+									<?php 
+									foreach ($manifs as $key => $une):?>
+
+									
+									<div class="manif">
+										<h4>. <?php echo "<a href=\"../controler/c_manif_detail.php?id=".$une['manif_id']."\">".$une['manif_intitule']."</a>"  ?></h4>
+										au prix de 
+										<?php echo $une['manif_prix_place']?>
+										dollars
+										<br>
+										<img src="../photos/<?php echo $une['manif_photo']?>">
+									</div>
+
+									
+									<?php endforeach ?>	
+
+									  <ul class="pagination pagination-lg">
+									    <a href="../controler/c_manif_page.php?debut=<?php echo $preview ?>">&laquo;</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 0 ?>">1</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 3 ?>">2</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 6 ?>">3</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 9 ?>">4</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 12 ?>">5</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 15 ?>">6</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 17 ?>">7</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo $next ?>">&raquo;</a>
+									   </ul>
+									   <ul>
+									    <li><a href="../controler/c_manif.php">Toutes les manifestations</a></li>
+									  </ul>
+						<hr>
+								</article>
+
+						</div>
+					</div>
 				</section>
 
 			<!-- FOOTER -->
