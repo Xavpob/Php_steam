@@ -93,7 +93,7 @@
 									    <a href="../controler/c_magasin.php?debut=<?php echo $next ?>">&raquo;</a>
 									   </ul>
 									   <ul>
-									    <li><a href="../controler/c_magasin_all.php">Toutes les jeux</a></li>
+									    <li><a href="../controler/c_magasin_all.php">Tous les jeux</a></li>
 									  </ul>
 						<hr>
 								</article>

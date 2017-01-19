@@ -82,19 +82,13 @@
 									
 									<?php endforeach ?>	
 
-									  <ul class="pagination pagination-lg">
-									    <a href="../controler/c_magasin.php?debut=<?php echo $preview ?>">&laquo;</a>
-									    <a href="../controler/c_magasin.php?debut=<?php echo 0 ?>">1</a>
-									    <a href="../controler/c_magasin.php?debut=<?php echo 6 ?>">2</a>
-									    <a href="../controler/c_magasin.php?debut=<?php echo 12 ?>">3</a>
-									    <a href="../controler/c_magasin.php?debut=<?php echo 18 ?>">4</a>
-									    <a href="../controler/c_magasin.php?debut=<?php echo 24 ?>">5</a>
-									    <a href="../controler/c_magasin.php?debut=<?php echo 30 ?>">6</a>
-									    <a href="../controler/c_magasin.php?debut=<?php echo $next ?>">&raquo;</a>
+									  <ul>
+									    <a href="../controler/c_magasin.php?debut=<?php echo 0 ?>">Retour aux pages</a>
+									   
 									   </ul>
-									   <ul>
-									    <li><a href="../controler/c_magasin_all.php">Toutes les jeux</a></li>
-									  </ul>
+									   <!-- <ul>
+									    <li><a href="../controler/c_magasin_all.php">Tous les jeux</a></li>
+									  </ul> -->
 						<hr>
 								</article>
 
