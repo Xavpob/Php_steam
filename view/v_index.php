@@ -9,28 +9,29 @@
 		<title>Saint Pavut</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/main 2.css" />
+		<link rel="stylesheet" href="../view/css/main2.css" />
+		<link rel="stylesheet" href="../view/css/style.css" />
 	</head>
 	<body>
 		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header">
+
+			<!-- HEADER -->
+
+			<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="c_index.php" id="logo">Saint Pavut <em></em></a></h1>
+						<h1><a href="c_index.php" id="logo">Steam<em></em></a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="c_index.php">Accueil</a></li>
-								<li>
-									<a href="c_manif_page.php?debut=0">Nos manifestions</a>
-									
-										</li>
-										<li><a href="c_salle_page.php?debut=0">Nos salles</a></li>
-										<li><a href="c_search.php">Rechercher</a></li>
-									</ul>
+								<li> <a href="c_jeux_page.php?debut=0">Magasin</a> </li>
+								<li><a href="#">Bibliothèque</a></li>
+								<li><a href="#">Panier</a></li>
+								<li><a href="#">Profil</a></li>
+							</ul>
 								
 						</nav>
 
@@ -39,12 +40,14 @@
 			<!-- Banner -->
 				<section id="banner">
 					<header>
-						<h2>Bienvenue sur notre site : <em>Vous trouverez ici toutes les infos sur notre centre culturel.</em></h2>
-						<a href="c_manif_page.php?debut=0" class="button">Plus d'informations</a>
+						<h2>Bienvenue sur notre site : <em>Vous trouverez ici tous les jeux que vous cherchez.</em></h2>
+						<a href="c_manif_page.php?debut=0" class="button">Magasin</a>
 					</header>
 				</section>
 
-			
+			<!-- FOOTER -->
+
+			<?php include '_footer.php'; ?>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

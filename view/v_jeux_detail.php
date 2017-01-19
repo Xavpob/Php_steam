@@ -6,37 +6,37 @@
 -->
 <html>
 	<head>
-		<title>Manifestations</title>
+		<title>Saint Pavu</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/style.css" />
+		<link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header">
+			<!-- HEADER -->
+
+			<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="c_index.php" id="logo">Saint Pavut <em></em></a></h1>
+						<h1><a href="c_index.php" id="logo">Steam<em></em></a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="c_index.php">Accueil</a></li>
-								<li class="current">
-									<a href="c_manif_page.php?debut=0">Nos manifestions</a>
-									
-										</li>
-										<li><a href="c_salle_page.php?debut=0">Nos salles</a></li>
-										<li><a href="c_search.php">Rechercher</a></li>
-									</ul>
+								<li class="current"><a href="c_index.php">Accueil</a></li>
+								<li> <a href="c_jeux_page.php?debut=0">Magasin</a> </li>
+								<li><a href="#">Bibliothèque</a></li>
+								<li><a href="#">Panier</a></li>
+								<li><a href="#">Profil</a></li>
+							</ul>
 								
 						</nav>
 
 				</div>
-
 			<!-- Main -->
 				<section class="wrapper style1">
 					<div class="container">
@@ -50,47 +50,38 @@
 										<p>Vous retrouverez ici l'ensemble des évênements que nous vous proposons.</p>
 									</header>
 
-
-
+								
 
 									<?php 
 									foreach ($manifs as $key => $une):?>
 
 									
-									<div class="manif">
-										<h4>. <?php echo "<a href=\"../controler/c_manif_detail.php?id=".$une['manif_id']."\">".$une['manif_intitule']."</a>"  ?></h4>
-										au prix de 
-										<?php echo $une['manif_prix_place']?>
-										dollars
+									<div class="manif_detail">
+										<h4>. <?php echo $une['manif_intitule'] ?></h4>
+										
+										Catégorie : <?php echo $une['manif_categorie']?></br>
+										Aura lieu le :<?php echo $une['manif_date']?></br></br>
+										<div class="description"><?php echo $une['manif_description']?></div>
 										<br>
-										<img src="../photos/<?php echo $une['manif_photo']?>">
+										<div id="photo">
+
+										<img src="../photos/<?php echo $une['manif_photo']?>"></div>
 									</div>
 
-									
+									 <?php
+                            echo get_dispo($id);
+                            ?>
+
 									<?php endforeach ?>	
 
-									  <ul class="pagination pagination-lg">
-									    <a href="../controler/c_manif_page.php?debut=<?php echo $preview ?>">&laquo;</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 0 ?>">1</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 3 ?>">2</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 6 ?>">3</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 9 ?>">4</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 12 ?>">5</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 15 ?>">6</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo 17 ?>">7</a>
-									    <a href="../controler/c_manif_page.php?debut=<?php echo $next ?>">&raquo;</a>
-									   </ul>
-									   <ul>
-									    <li><a href="../controler/c_manif.php">Toutes les manifestations</a></li>
-									  </ul>
-						<hr>
+									<hr>
 								</article>
 
 						</div>
 					</div>
 				</section>
 
-			<!-- Footer -->
+<!-- Footer -->
 				<div id="footer">
 					<div class="container">
 						<div class="row">

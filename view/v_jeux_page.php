@@ -15,23 +15,22 @@
 	<body>
 		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header">
+			<!-- HEADER -->
+
+			<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="c_index.php" id="logo">Saint Pavut <em></em></a></h1>
+						<h1><a href="c_index.php" id="logo">Steam<em></em></a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="c_index.php">Accueil</a></li>
-								<li class="current">
-									<a href="c_manif_page.php?debut=0">Nos manifestions</a>
-									
-										</li>
-										<li><a href="c_salle_page.php?debut=0">Nos salles</a></li>
-										<li><a href="c_search.php">Rechercher</a></li>
-									</ul>
+								<li class="current"><a href="c_index.php">Accueil</a></li>
+								<li> <a href="c_jeux_page.php?debut=0">Magasin</a> </li>
+								<li><a href="#">Bibliothèque</a></li>
+								<li><a href="#">Panier</a></li>
+								<li><a href="#">Profil</a></li>
+							</ul>
 								
 						</nav>
 
@@ -50,30 +49,41 @@
 										<p>Vous retrouverez ici l'ensemble des évênements que nous vous proposons.</p>
 									</header>
 
-									
 
-									<?php foreach ($manifs as $key => $une):?>
+
+
+									<?php 
+									foreach ($manifs as $key => $une):?>
+
+									
 									<div class="manif">
-										<h4>. <?php echo $une['manif_intitule'] ?></h4>
+										<h4>. <?php echo "<a href=\"../controler/c_manif_detail.php?id=".$une['manif_id']."\">".$une['manif_intitule']."</a>"  ?></h4>
 										au prix de 
 										<?php echo $une['manif_prix_place']?>
 										dollars
 										<br>
 										<img src="../photos/<?php echo $une['manif_photo']?>">
-										<br>
-
-                            	  
 									</div>
+
+									
 									<?php endforeach ?>	
 
-									<div id="revenir">
 									  <ul class="pagination pagination-lg">
-									    <a href="../controler/c_manif_page.php?debut=0">Revenir aux pages</a><hr>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo $preview ?>">&laquo;</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 0 ?>">1</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 3 ?>">2</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 6 ?>">3</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 9 ?>">4</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 12 ?>">5</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 15 ?>">6</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo 17 ?>">7</a>
+									    <a href="../controler/c_manif_page.php?debut=<?php echo $next ?>">&raquo;</a>
+									   </ul>
+									   <ul>
+									    <li><a href="../controler/c_manif.php">Toutes les manifestations</a></li>
 									  </ul>
-									</div>
+						<hr>
 								</article>
-
-
 
 						</div>
 					</div>

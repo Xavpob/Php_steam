@@ -1,44 +1,35 @@
-	<!-- Javascript Libs -->
-	<script src="view/js/libs/jquery-2.1.0.min.js"></script>
-	<script src="view/js/libs/bootstrap.min.js"></script>
-	<script src="view/js/libs/midway.min.js"></script>
-
-	<script src="view/js/main.js"></script>
-	<footer class="footer">
-		<div class="container">
-			<h3>By Vincent BALLERIN, Xaverine POBELLE and Axel GUILLAUME</h3>
+<div class="footer_bg" id="contact"><!-- start footer -->
+<div class="container">
+	<div class="row footer">
+		<div class="col-md-8 contact_left">
+			<h3>Restons en contact !</h3>
+			<p>Une question à me demander, une idée ou une remarque ? </h4>
+			<form method="post" action="#">
+				<input type="text" value="Nom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nom';}">
+				<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				<input type="text" value="Sujet" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Sujet';}">
+				<textarea onfocus="if(this.value == 'Votre message ici') this.value='';" onblur="if(this.value == '') this.value='Votre message ici;" >Votre message ici</textarea>
+				<span class="pull-right"><input type="submit" value="Envoyer !"></span>
+			</form>
 		</div>
-	</footer>
-	<?php if(basename($_SERVER['PHP_SELF']) == 'dashboard.php'){ ?>
-	<audio preload></audio>
-
-	<script src="view/js/libs/audiojs/audio.min.js"></script>
-	<script>
-		$(function() {
-			// Setup the player to autoplay the next track
-			var a = audiojs.createAll({
-				trackEnded: function() {
-					var next = $('.playing').next();
-					if (!next.length) next = $('#musicfeed .music').first();
-					next.addClass('playing').siblings().removeClass('playing');
-					audio.load(next.attr('data-src'));
-					audio.play();
-				}
-			});
-
-			// Load in the first track
-			var audio = a[0];
-
-			// Load in a track on click
-			$('#musicfeed .music').click(function(e) {
-				$(this).addClass('playing').siblings().removeClass('playing');
-				audio.load($(this).attr('data-src'));
-				audio.play();
-			})
-		});
-	</script>
-	<?php } ?>
-
-
-	</body>
-</html>
+		<div class="col-md-4  contact_right">
+			
+			<ul class="list-unstyled address">
+				<li><i class="fa fa-map-marker"></i><span>15 rue Louis Pasteur 10100 Romilly sur Seine,</span></li>
+				<li><i class="fa fa-phone"></i><span>06 72 47 06 44  |  03 25 24 39 29 </span></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:xaverinepobelle@orange.fr">xaverinepobelle@orange.fr</a></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:xaverine.pobelle@etudiant.univ-reims.fr">xaverine.pobelle@etudiant.univ-reims.fr</a></li>
+			</ul>
+		</div>		
+	</div>
+</div>
+</div>
+<div class="footer1_bg"><!-- start footer1 -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p class="link"><span>&#169;  Xaverine POBELLE - Axel GUILLAUME - Louis RESCHE | All rights reserved | 2016 / 2017 </span></p>
+			</div>
+		</div>	
+	</div>
+</div>
