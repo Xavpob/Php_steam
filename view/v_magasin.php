@@ -32,8 +32,8 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="c_index.php">Accueil</a></li>
-								<li> <a href="c_magasin.php?debut=0">Magasin</a> </li>
+								<li><a href="c_index.php">Accueil</a></li>
+								<li class="current"> <a href="c_magasin.php?debut=0">Magasin</a> </li>
 								<li><a href="c_biblio.php">Bibliothèque</a></li>
 								<li><a href="c_comm.php">Communauté</a></li>
 								
