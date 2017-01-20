@@ -10,22 +10,15 @@ if(empty($_GET['search'])){
  LIKE '%".$_GET['search']."%'");
         $recherche_jeux = $result->fetchAll();
         return $recherche_jeux;
-
-
     }
-    
 
             }
-
 ?>
 
 
 <?php foreach ($recherche_jeux as $key => $une):
 
     $id = $une['id'];
-
-
-
 
     ?>
 

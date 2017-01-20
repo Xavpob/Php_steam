@@ -6,10 +6,9 @@
 								<h3>Liens utiles</h3>
 								<ul class="links">
 									<li><a href="c_index.php">Accueil</a></li>
-									<li><a href="c_manif_page.php?debut=0">Manifestations par page</a></li>
-									<li><a href="c_manif.php">Toutes les manifestions</a></li>
-									<li><a href="c_salle_page.php?debut=0">Salles par page</a></li>
-									<li><a href="c_salle.php">Toutes les salles</a></li>
+								<li class="current"> <a href="c_magasin.php?debut=0">Magasin</a> </li>
+								<li><a href="c_biblio.php">Bibliothèque</a></li>
+								<li><a href="c_comm.php">Communauté</a></li>
 									
 								</ul>
 							</section>
@@ -17,8 +16,9 @@
 								<h3>Autres liens utiles</h3>
 								<ul class="links">
 									
-									<li><a href="c_manif_pdf.php">Le catalogue</a></li>
-									<li><a href="c_search.php">Rechercher</a></li>
+									<li><a href="c_panier.php">Panier</a></li>
+							<li><a href="c_profil.php">Profil</a></li>
+							<li><a href="../logout.php">Logout</a></li>
 								</ul>
 							</section>
 							
@@ -62,7 +62,7 @@
 					<!-- Copyright -->
 						<div class="copyright">
 							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Untitled. All rights reserved</li><li>xaverine - axel - louis</li>
 							</ul>
 						</div>
 
