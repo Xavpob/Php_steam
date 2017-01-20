@@ -25,6 +25,7 @@
 					<ul>
 						<li><h1><a href="c_index.php" id="logo"><img id="steam" src="../images/steam.png" alt="">Steam<em></em></a>
 							</h1></li>
+						<li><a href="c_panier.php">Recherche</a></li>
 						<li><a href="c_panier.php">Panier</a></li>
 						<li><a href="c_profil.php">Profil</a></li>
 						<li><a href="../logout.php">Logout</a></li>
@@ -52,7 +53,25 @@
 						<a href="c_manif_page.php?debut=0" class="button">Magasin</a>
 					</header>
 				</section>
+				<!-- Content -->
+				<div class="categorie" style="margin-left: 10%;">
+					<article>
+						<header>
+							<h2>La communauté</h2>
 
+							<?php 
+							foreach ($user as $key => $une):?>
+
+
+							<div class="manif">
+								<ul>
+									<li><?php echo $une['name']?></li>
+								</ul>
+							</div>
+
+
+						<?php endforeach ?>	
+					</header>
 			<!-- FOOTER -->
 
 			<?php include '_footer.php'; ?>

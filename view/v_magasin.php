@@ -25,6 +25,7 @@
 					<ul>
 						<li><h1><a href="c_index.php" id="logo"><img id="steam" src="../images/steam.png" alt="">Steam<em></em></a>
 							</h1></li>
+							<li><a href="c_recherche.php">Recherche</a></li>
 						<li><a href="c_panier.php">Panier</a></li>
 						<li><a href="c_profil.php">Profil</a></li>
 						<li><a href="../logout.php">Logout</a></li>
