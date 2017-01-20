@@ -30,7 +30,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
       if (sizeof($members)>0){
         $user_id = $members[0]["id"];
         $_SESSION["user_id"] = $user_id;
-        header('Location: view/v_index.php');
+        header('Location: controler/c_index.php');
        }else{
         $error = "Error : Erreur dans le pseudo/mot de passe"; 
       }

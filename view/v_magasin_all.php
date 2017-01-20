@@ -47,7 +47,7 @@
 				<section id="banner">
 					<header>
 						<h2>Ne jouez pas seul : <em>vos amis et futurs rencontres sont sur Steam.</em></h2>
-						<a href="c_manif_page.php?debut=0" class="button">Retrouvez les</a>
+						<a href="c_comm.php?debut=0" class="button">Retrouvez les</a>
 					</header>
 				</section>
 
@@ -58,7 +58,32 @@
 						<div id="content">
 
 							<!-- Content -->
+							<div class="categorie" style="float:left; width: 30%;">
+								<article>
+									<header>
+										<h2>Catégories</h2>
 
+									<?php 
+									foreach ($categorie as $key => $une):?>
+
+									
+									<div class="manif">
+										<ul>
+										<li><?php echo "<a href=\"../controler/c_magasin_all.php?categorie=".$une['id']."\">".$une['name']."</a>"?></li>
+										</ul>
+									</div>
+
+									
+									<?php endforeach ?>	
+									</header>
+
+
+
+
+									
+								</article>
+								</div>
+							<div class="jeux" style="float:right; width: 70%;">
 								<article>
 									<header>
 										<h2>Nos jeux</h2>
@@ -86,12 +111,11 @@
 									    <a href="../controler/c_magasin.php?debut=<?php echo 0 ?>">Retour aux pages</a>
 									   
 									   </ul>
-									   <!-- <ul>
-									    <li><a href="../controler/c_magasin_all.php">Tous les jeux</a></li>
-									  </ul> -->
-						<hr>
+									  
+				
 								</article>
-
+								</div>
+								
 						</div>
 					</div>
 				</section>
@@ -101,12 +125,12 @@
 			<?php include '_footer.php'; ?>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>

@@ -9,9 +9,34 @@
 		<title>Saint Pavut</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<link rel="stylesheet" href="../view/css/main2.css" />
 		<link rel="stylesheet" href="../view/css/style.css" />
 	</head>
+	<script>
+    $(document).ready(function(){
+
+        $('body').keyup(function( event ) {
+            console.log ( 'test console' );
+            var search = $('#search').val();
+            if(search === ''){
+
+            }else{
+                $.ajax({
+                    url : 'recherche.php?search='+search+'',
+                    success: function(){
+
+                        $(".affiche").load('recherche.php?search='+search+'');
+                        console.log ( 'test console2' );
+                    }
+
+                });
+            }
+
+        });
+    });
+
+</script>
 	<body>
 		<div id="page-wrapper">
 
@@ -23,6 +48,7 @@
 					<!-- Logo -->
 						<h1><a href="c_index.php" id="logo">Steam<em></em></a></h1>
 						<ul>
+							<li><a href="c_recherche.php">Rechercher un jeu</a></li>
 							<li><a href="c_panier.php">Panier</a></li>
 							<li><a href="c_profil.php">Profil</a></li>
 							<li><a href="../logout.php">Logout</a></li>
@@ -52,13 +78,13 @@
 						<article>
 									<header>
 										<h2>Rechercher</h2>
-										<p>Vous retrouverez ici l'ensemble des manifestations qui correspondent au mot-clef que vous avez tapé.</p>
+										<p>Cherchez ici le nom de votre jeu.</p>
 									</header>
 
 						<div class="form-group">
 						    <div class="input-group input-group-lg icon-addon addon-lg">
 						        <input type="text" placeholder="Votre recherche" name="search" id="search" class="form-control input-lg">
-						        <i class="icon icon-search"></i>
+						       
 						        
 						    </div>
 						</div>

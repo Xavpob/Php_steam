@@ -59,7 +59,7 @@
 						<div id="content">
 
 							<!-- Content -->
-
+							
 								<article>
 									<header>
 										<h2>Nos jeux</h2>
