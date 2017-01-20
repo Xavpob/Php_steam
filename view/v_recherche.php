@@ -81,14 +81,14 @@
 										<p>Cherchez ici le nom de votre jeu.</p>
 									</header>
 
+					<form method="post" action="c_recherche.php" class="form-horizontal" role="form">
 						<div class="form-group">
 						    <div class="input-group input-group-lg icon-addon addon-lg">
 						        <input type="text" placeholder="Votre recherche" name="search" id="search" class="form-control input-lg">
-						       
-						        
+						        <button type="submite">rechercher</button> 
 						    </div>
 						</div>
- <div class="col-xs-12 col-sm-12 col-md-11 col-ld-11 affiche">
+					</form>
 
 
 

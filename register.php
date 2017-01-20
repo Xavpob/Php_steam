@@ -42,7 +42,7 @@
                     $user_id = $users[0]["id"]; 
                 
                     $_SESSION["user_id"] = $user_id; 
-                    header('Location: view/v_index.php');
+                    header('Location: controler/c_index.php');
                 }
             
             else{ 
