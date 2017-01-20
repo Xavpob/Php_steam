@@ -74,7 +74,7 @@
 
 									
 									<div class="manif">
-										<h4>. <?php echo "<a href=\"../controler/c_magasin.php?id=".$une['id']."\">".$une['name']."</a>"  ?></h4>
+										<h4>. <?php echo "<a href=\"../controler/c_jeux.php?id=".$une['id']."\">".$une['name']."</a>"  ?></h4>
 										<img src="http:<?php echo $une['cover_url']?>">
 										<br>
 										GRATUIT

@@ -58,60 +58,34 @@
 						<div id="content">
 
 							<!-- Content -->
-							<div class="categorie" style="float:left; width: 30%;">
-								<article>
-									<header>
-										<h2>Catégories</h2>
-
-									<?php 
-									foreach ($categorie as $key => $une):?>
-
-									
-									<div class="manif">
-										<ul>
-										<li><?php echo "<a href=\"../controler/c_magasin_all.php?categorie=".$une['id']."\">".$une['name']."</a>"?></li>
-										</ul>
-									</div>
-
-									
-									<?php endforeach ?>	
-									</header>
-
-
-
-
-									
-								</article>
-								</div>
+							
 							<div class="jeux" style="float:right; width: 70%;">
-								<article>
-									<header>
-										<h2>Nos jeux</h2>
-										<p>Vous retrouverez ici l'ensemble des jeux que nous vous proposons.</p>
-									</header>
 
-
-
-
-									<?php 
+							<?php 
 									foreach ($magasins as $key => $une):?>
 
-									
+								<article>
+									<header>
+										<h2><?php echo $une['name']?></h2>
+										<p>Vous retrouverez ici l'ensemble des infos pour ce jeu.</p>
+									</header>
+
 									<div class="manif">
-										<h4>. <?php echo "<a href=\"../controler/c_jeux.php?id=".$une['id']."\">".$une['name']."</a>"  ?></h4>
 										<img src="http:<?php echo $une['cover_url']?>">
 										<br>
+										<p><?php echo $une['summary']?></p>
 										GRATUIT
+										<button>acheter</button>
 									</div>
 
 									
 									<?php endforeach ?>	
-
+									<div>
 									  <ul>
 									    <a href="../controler/c_magasin.php?debut=<?php echo 0 ?>">Retour aux pages</a>
 									   
 									   </ul>
-									  
+									 </div> 
 				
 								</article>
 								</div>
