@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbName = 'IIM_Git_SoundCloud';
+$dbName = 'store';
 $user = 'root';
 $password = 'root';
 

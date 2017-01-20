@@ -9,7 +9,7 @@
             $password = htmlspecialchars($_POST["password"]);
             $email = htmlspecialchars($_POST["email"]);
     
-            $request = $db->prepare("SELECT * FROM users WHERE username = :username OR email = :email");
+            $request = $db->prepare("SELECT * FROM Users WHERE name = :username OR email = :email");
 
             $request->execute( array("username"=> $username, "email"=> $email));
 
@@ -17,8 +17,8 @@
                     
             if (!count($users)){
                 $request = $db->prepare("
-                    INSERT INTO users (username, email, password, picture, created_at)
-                    VALUES (:username, :email, :password, 'test',  NOW())"
+                    INSERT INTO Users (name, email, password)
+                    VALUES (:username, :email, :password)"
                 );
                 
                 $request->execute([
@@ -30,10 +30,10 @@
                 //parti login
                 $request = $db->prepare("
                     SELECT id 
-                    FROM users 
-                    WHERE username 
+                    FROM Users 
+                    WHERE name 
                     LIKE :username AND password = :password"
-                ); 
+                );
                 $request->execute(array("username"=> $username,"password"=> $password));
             
                 $users = $request->fetchALL(); 
@@ -54,5 +54,4 @@
 
 include 'view/_header.php';
 include 'view/register.php';
-include 'view/_footer.php';
    ?>

@@ -17,11 +17,12 @@ input:focus {
 	bottom:0px;
 	color: white;
 	text-align: center;
-	background-color: #04705d;
+	background-color: #06193F;
 }
 #logbox {
+	margin-top: 50%;
 	padding: 40px;
-	background-color: #04705d;
+	background-color: #06193F;
 	color: #fff;
 }
 
@@ -40,7 +41,7 @@ input:focus {
 	margin-top: 40px;
 	color: white;
 	text-align: center;
-	background-color: #04705d;
+	background-color: #06193F;
 }
 
 #logbox .form-input,
@@ -53,14 +54,14 @@ input:focus {
 	width: 100%;
 	border: transparent;
 	padding: 10px 0 10px 40px;
-	background-color: #47a08a;
+	background-color: #0C337F;
 	color: white;
 	font-size: 12px;
 	text-transform: uppercase;
 }
 
 #logbox .form-input input:focus {
-	background-color: #63bba4;
+	background-color: #1379AB;
 	transition:all 0.3s linear;
 }
 
@@ -105,12 +106,12 @@ input:focus {
 	width: 100%;
 	font-size: 11px;
 	text-transform: uppercase;
-	background-color: #67d8e0;
+	background-color: #0C337F;
 	padding: 10px;
 }
 
 #logbox.register .form-submit input[type="submit"] {
-	background-color: #67d8e0;
+	background-color: #0C337F;
 }
 
 #logbox .form-submit input[type="submit"]:active {
@@ -182,7 +183,7 @@ p.account a {
 
 #topbar a.btn {
 	border: none;
-	background-color: #67d8e0;
+	background-color: #0C337F;
 	border: solid 1px #48bdc4;
 	float: right;
 	line-height: 25px;
@@ -227,15 +228,15 @@ p.account a {
 }
 
 .music:hover{
-	border: solid 1px #04705d;
+	border: solid 1px #06193F;
 }
 
 .music.playing {
-	border: solid 1px #67d8e0;
+	border: solid 1px #0C337F;
 }
 
 .music.playing h3{
-	color: #67d8e0;
+	color: #0C337F;
 	font-weight: bold;
 }
 
@@ -284,7 +285,7 @@ p.account a {
 	border: none;
 	padding: 10px 20px;
 	color: white;
-	background-color: #04705d;
+	background-color: #06193F;
 }
 
 .image:before {
@@ -419,7 +420,7 @@ p.account a {
 	width:40px;
 }
 .audiojs {
-	background: #04705d;
+	background: #06193F;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
