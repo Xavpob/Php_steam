@@ -20,22 +20,24 @@
 
 			<div id="header">
 
-					<!-- Logo -->
-						<h1><a href="c_index.php" id="logo">Steam<em></em></a></h1>
-						<ul>
-							<li><a href="c_panier.php">Panier</a></li>
-							<li><a href="c_profil.php">Profil</a></li>
-							<li><a href="../logout.php">Logout</a></li>
-
-						</ul>
+				<!-- Logo -->
+				<div class="top">
+					<ul>
+						<li><h1><a href="c_index.php" id="logo"><img id="steam" src="../images/steam.png" alt="">Steam<em></em></a>
+							</h1></li>
+						<li><a href="c_panier.php">Panier</a></li>
+						<li><a href="c_profil.php">Profil</a></li>
+						<li><a href="../logout.php">Logout</a></li>
+					</ul>
+				</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="c_index.php">Accueil</a></li>
+								<li><a href="c_index.php">Accueil</a></li>
 								<li> <a href="c_magasin.php?debut=0">Magasin</a> </li>
 								<li><a href="c_biblio.php">Bibliothèque</a></li>
-								<li><a href="c_comm.php">Communauté</a></li>
+								<li class="current"><a href="c_comm.php">Communauté</a></li>
 								
 							</ul>
 								
